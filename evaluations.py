@@ -2,6 +2,8 @@ from datetime import datetime
 
 import pandas as pd
 
+import datakicker as dk
+
 
 def importdata():
     data = pd.read_csv('data/evchargers.csv')
@@ -43,10 +45,11 @@ def iteratechargers():
         else:
             faulty = faulty.append(summarytempdf)
         print(ident + ' geschrieben')
-        thischarger = None
 
     summary.to_csv('data/chargers/summary.csv', index=True, header=True)
     faulty.to_csv('data/chargers/faulty.csv', index=True, header=True)
+
+    return (summary)
 
 
 
@@ -55,6 +58,11 @@ def iteratechargers():
 
 data = importdata()
 unique = uniquelist(data)
-
-iteratechargers()
+summary = iteratechargers()
+datasize = len(data.index) - 1
+timeframe0 = datetime.strptime(data.iloc[0, 3][:19], '%Y-%m-%dT%H:%M:%S')
+timeframe1 = datetime.strptime(data.iloc[(datasize), 3][:19], '%Y-%m-%dT%H:%M:%S')
+timeframe = datetime.strftime(timeframe0, "%m/%d/%Y, %H:%M:%S") + ' bis zum ' + datetime.strftime(timeframe1,
+                                                                                                  "%m/%d/%Y, %H:%M:%S")
 print('finito')
+dk.updatedwchart('Xxes2', summary, timeframe)
