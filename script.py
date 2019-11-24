@@ -2,6 +2,8 @@ import requests
 import json
 from datetime import datetime
 import csv
+import pandas as pd
+
 
 now = datetime.now()
 def gatherSBB():
