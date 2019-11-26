@@ -10,7 +10,7 @@ The Charts with the 'dirty' Data are still in the script to demonstrate the 'dat
 The Charts are used in this [blogpost](https://rideable.ch/belegung-ladestationen-iwb-auswertung/) and the data-cleaning is explained further.
 
 ## Setup
-1. In order to get the script to run, update the credentials_dummy.py file and rename it to 'credentials.py' (You need a Datawrapper Token and three Chart-IDs from Datawrapper
+1. In order to get the script to run, update the credentials_dummy.py file and rename it to 'credentials.py' (You need a Datawrapper Token and three Chart-IDs from Datawrapper)
 2. Create the folder ./data/chargers
 3. Run script.py first and evaluations.py afterwards
 4. Enjoy!
