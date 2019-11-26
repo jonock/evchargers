@@ -7,4 +7,4 @@ Data gets cleaned - differences calculated, cleaned and pushed via the Datawrapp
 The Charts with the 'dirty' Data are still in the script to demonstrate the 'datacleaning' steps. 
 
 ## More information
-The Charts are used in this [Blogpost](https://rideable.ch/belegung-ladestationen-iwb-auswertung/) and the data-cleaning is explained further.
+The Charts are used in this [blogpost](https://rideable.ch/belegung-ladestationen-iwb-auswertung/) and the data-cleaning is explained further.
