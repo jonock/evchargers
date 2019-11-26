@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import pandas as pd
 import requests
 
@@ -36,10 +34,12 @@ def createDWChart(title="Test"):
 
 
 def updatedwchart(id, data, timeframe='test'):
-    data = data.to_csv()
+    data.to_csv('dataupload.csv', encoding='utf8')
+    data = data.to_csv(encoding='utf8')
     url = f'https://api.datawrapper.de/v3/charts/{id}/data'
     headers = {
-        'authorization': f'Bearer {dwToken}'
+        'authorization': f'Bearer {dwToken}',
+        'content-type': 'text/csv'
     }
     dataupdate = ((requests.put(url=url, headers=headers, data=data)))
 
@@ -48,7 +48,7 @@ def updatedwchart(id, data, timeframe='test'):
     headers = {
         'authorization': f'Bearer {dwToken}'
     }
-    message = 'Zuletzt aktualisiert: ' + str(datetime.now()) + '. Zeitraum der Daten: ' + timeframe
+    message = 'Zeitraum der Daten: ' + timeframe
     payload = {
         'metadata': {
             'annotate': {
