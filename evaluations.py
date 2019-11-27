@@ -1,9 +1,9 @@
 from datetime import datetime
 
 import pandas as pd
+from credentials import chartid1, chartid2, chartid3
 
 import datakicker as dk
-from credentials import chartid1, chartid2, chartid3
 
 
 def importdata():
