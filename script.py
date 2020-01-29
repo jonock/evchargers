@@ -4,7 +4,10 @@ from datetime import datetime
 
 import requests
 
+from ftpupload import ftpfileupload
+
 now = datetime.now()
+
 
 def gatherBS(id=100004):
     response = requests.get(
@@ -43,6 +46,7 @@ def writeCSVinit(data, filename):
         csvwriter.writerow(i.values())
     file.close()
 
+
 def addTimestamp(filename):
     add = now.strftime("%y%m%d_%H%M%S")
     filename = filename + '_' + add
@@ -63,9 +67,8 @@ def writeCSVcont(data, filename):
     return filename
 
 data = gatherBS(100004)
-#writeCSVinit(data, 'evchargers.csv')
+writeCSVinit(data, 'rawdata_now.csv')
 recent = writeCSVcont(data, 'evchargers')
 addData(data,'evchargers.csv', recent)
 print('Neue Tabelle geschrieben: ' + recent)
-
-
+ftpfileupload('rawdata_now.csv', 'data/rawdata_now.csv')

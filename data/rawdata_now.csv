@@ -1,0 +1,27 @@
+status   ,power   ,parkingfield,timestamp                ,geo_point_2d                           ,totalparkings,location,addresse
+AVAILABLE,22 kW   ,1           ,2019-11-15T11:39:08+00:00,"{'lat': 47.5592338, 'lon': 7.5865812}",1            ,EG      ,"Parkhaus Storchen, Fischmarkt 10"
+AVAILABLE,50/22 kW,1           ,2020-01-28T08:49:21+00:00,"{'lat': 47.5453508, 'lon': 7.5908071}",2            ,        ,"Heizwerk Bahnhof, Solothurnerstrasse 18"
+AVAILABLE,22 kW   ,2           ,2020-01-29T11:47:03+00:00,"{'lat': 47.5510555, 'lon': 7.5683475}",2            ,        ,General Guisan-Strasse 46
+OCCUPIED ,50/22 kW,2           ,2020-01-29T11:47:48+00:00,"{'lat': 47.5549797, 'lon': 7.6126351}",2            ,        ,Zürcherstrasse 140
+OCCUPIED ,50/22 kW,2           ,2020-01-29T11:55:56+00:00,"{'lat': 47.5699144, 'lon': 7.5738776}",2            ,        ,Vogesenstrasse 143
+AVAILABLE,22 kW   ,1           ,2020-01-29T11:55:23+00:00,"{'lat': 47.5351635, 'lon': 7.5875696}",2            ,        ,Bruderholzallee 14
+AVAILABLE,22 kW   ,1           ,2020-01-29T11:57:51+00:00,"{'lat': 47.5468788, 'lon': 7.5837529}",1            ,        ,"IWB, Margarethenstrasse 40"
+AVAILABLE,50/22 kW,1           ,2020-01-29T12:13:07+00:00,"{'lat': 47.5549797, 'lon': 7.6126351}",2            ,        ,Zürcherstrasse 140
+AVAILABLE,22 kW   ,2           ,2020-01-29T12:25:38+00:00,"{'lat': 47.5703948, 'lon': 7.6147607}",2            ,        ,Egliseestrasse 85
+AVAILABLE,50 kW   ,2           ,2020-01-29T12:29:27+00:00,"{'lat': 47.5571633, 'lon': 7.5703527}",2            ,        ,Allschwilerplatz 12
+AVAILABLE,22 kW   ,2           ,2020-01-29T12:38:05+00:00,"{'lat': 47.5365589, 'lon': 7.5973156}",2            ,        ,Thiersteinerrain 70 / Im Sesselacker 1
+AVAILABLE,22 kW   ,2           ,2020-01-29T12:33:39+00:00,"{'lat': 47.5351635, 'lon': 7.5875696}",2            ,        ,Bruderholzallee 14
+AVAILABLE,22 kW   ,2           ,2019-08-30T19:44:03+00:00,"{'lat': 47.5517447, 'lon': 7.6098455}",2            ,        ,Gellertstrasse 34
+AVAILABLE,22 kW   ,1           ,2020-01-29T11:44:09+00:00,"{'lat': 47.5506255, 'lon': 7.5874945}",2            ,2. UG   ,"Parkhaus Elisabethen, Steinentorberg 5"
+AVAILABLE,50 kW   ,1           ,2020-01-29T11:48:51+00:00,"{'lat': 47.5571633, 'lon': 7.5703527}",2            ,        ,Allschwilerplatz 12
+OCCUPIED ,22 kW   ,1           ,2020-01-29T12:12:06+00:00,"{'lat': 47.5517447, 'lon': 7.6098455}",2            ,        ,Gellertstrasse 34
+AVAILABLE,22 kW   ,1           ,2020-01-29T12:43:37+00:00,"{'lat': 47.5365589, 'lon': 7.5973156}",2            ,        ,Thiersteinerrain 70 / Im Sesselacker 1
+OCCUPIED ,22 kW   ,1           ,2020-01-29T12:32:46+00:00,"{'lat': 47.5510555, 'lon': 7.5683475}",2            ,        ,General Guisan-Strasse 46
+AVAILABLE,22 kW   ,2           ,2020-01-29T12:24:56+00:00,"{'lat': 47.5665095, 'lon': 7.5726328}",2            ,        ,Flughafenstrasse 4
+OCCUPIED ,22 kW   ,2           ,2020-01-29T09:14:19+00:00,"{'lat': 47.5482996, 'lon': 7.5997219}",2            ,        ,Sevogelstrasse 113/115
+OCCUPIED ,22 kW   ,2           ,2020-01-29T11:49:38+00:00,"{'lat': 47.5506255, 'lon': 7.5874945}",2            ,2. UG   ,"Parkhaus Elisabethen, Steinentorberg 5"
+AVAILABLE,50/22 kW,2           ,2020-01-29T11:54:58+00:00,"{'lat': 47.5453508, 'lon': 7.5908071}",2            ,        ,"Heizwerk Bahnhof, Solothurnerstrasse 18"
+AVAILABLE,50/22 kW,1           ,2020-01-29T11:47:49+00:00,"{'lat': 47.5699144, 'lon': 7.5738776}",2            ,        ,Vogesenstrasse 143
+OCCUPIED ,22 kW   ,1           ,2020-01-29T12:08:41+00:00,"{'lat': 47.5665095, 'lon': 7.5726328}",2            ,        ,Flughafenstrasse 4
+OCCUPIED ,22 kW   ,1           ,2020-01-29T12:27:35+00:00,"{'lat': 47.5841185, 'lon': 7.6511326}",1            ,        ,"Gemeindeverwaltung Riehen, Wettsteinstrasse 1"
+AVAILABLE,22 kW   ,1           ,2020-01-29T12:19:18+00:00,"{'lat': 47.5482996, 'lon': 7.5997219}",2            ,        ,Sevogelstrasse 113/115

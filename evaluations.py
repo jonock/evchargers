@@ -1,9 +1,9 @@
 from datetime import datetime
 
 import pandas as pd
-from credentials import chartid1, chartid2, chartid3
 
 import datakicker as dk
+from credentials import chartid1, chartid2, chartid3
 
 
 def importdata():
@@ -133,10 +133,6 @@ def iteratechargersd():
     return (summary)
 
 
-
-
-
-
 data = importdata()
 unique = uniquelist(data)
 summaryclean = iteratechargers()
@@ -147,6 +143,7 @@ timeframe0 = datetime.strptime(data.iloc[1, 3][:19], '%Y-%m-%dT%H:%M:%S')
 timeframe1 = datetime.strptime(data.iloc[(datasize), 3][:19], '%Y-%m-%dT%H:%M:%S')
 timeframe = datetime.strftime(timeframe0, "%d.%m.%Y, %H:%M") + ' bis zum ' + datetime.strftime(timeframe1,
                                                                                                "%d.%m.%Y, %H:%M")
+print(timeframe)
 print('finito')
 dk.updatedwchart(chartid1, summaryclean, timeframe)
 dk.updatedwchart(chartid2, summaryd1, timeframe)
