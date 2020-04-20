@@ -28,6 +28,7 @@ def addData(data,filename,recent):
                     appender = csv.writer(dbfile)
                     appender.writerow(row)
                     dbfile.close()
+
     fileread.close()
     recentdata.close()
 
