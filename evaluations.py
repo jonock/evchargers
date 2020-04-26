@@ -56,7 +56,7 @@ def iteratechargers():
 
     return (summary)
 
-
+# Next iteratechargers sequences just for illustration purposes
 def iteratechargersd2():
     entry1 = None
     summary = pd.DataFrame()
@@ -141,8 +141,7 @@ summaryd2 = iteratechargersd2()
 datasize = len(data.index) - 1
 timeframe0 = datetime.strptime(data.iloc[1, 3][:19], '%Y-%m-%dT%H:%M:%S')
 timeframe1 = datetime.strptime(data.iloc[(datasize), 3][:19], '%Y-%m-%dT%H:%M:%S')
-timeframe = datetime.strftime(timeframe0, "%d.%m.%Y, %H:%M") + ' bis zum ' + datetime.strftime(timeframe1,
-                                                                                               "%d.%m.%Y, %H:%M")
+timeframe = datetime.strftime(timeframe0, "%d.%m.%Y, %H:%M") + ' bis zum ' + datetime.strftime(timeframe1,"%d.%m.%Y, %H:%M")
 print(timeframe)
 print('finito')
 dk.updatedwchart(chartid1, summaryclean, timeframe)
