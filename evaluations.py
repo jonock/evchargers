@@ -19,6 +19,7 @@ def iteratechargers():
     entry1 = None
     summary = pd.DataFrame()
     faulty = pd.DataFrame()
+
     for index, row in unique.iterrows():
         thischarger = data[(data.addresse == row.addresse) & (data.parkingfield == row.parkingfield)]
         ident = str(row.addresse).replace(' ', '')[:10] + '_' + str(row.parkingfield)
@@ -29,7 +30,7 @@ def iteratechargers():
                 entry2 = entry
                 timediff = datetime.strptime(entry2.timestamp[:19], '%Y-%m-%dT%H:%M:%S') - datetime.strptime(
                     entry1.timestamp[:19], '%Y-%m-%dT%H:%M:%S')
-                if timediff.total_seconds() < 90000:
+                if timediff.total_seconds() < 90000 and timediff.total_seconds() >= 0:
                     difflist.append(timediff.total_seconds())
                 else:
                     difflist.append(0)
@@ -134,6 +135,7 @@ def iteratechargersd():
 
 
 data = importdata()
+data = data.loc[data['timestamp'].str.startswith('2020')].copy()
 unique = uniquelist(data)
 summaryclean = iteratechargers()
 summaryd1 = iteratechargersd()
